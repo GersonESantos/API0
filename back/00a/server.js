@@ -13,9 +13,8 @@ app.post('/usuarios', (req, res) => {
   
   res.send('Ok Post Deu Certo');
   });
-
-
-pp.listen(3000, () => {
+  
+app.listen(3000, () => {
     console.log('🚀Rodando server/r76 listening at http://localhost:3000');
   });
   
