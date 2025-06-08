@@ -1,6 +1,7 @@
 import express from 'express';
 const app = express();
 app.use(express.json());
+const users = [];
 
 app.get('/usuarios', (req, res) => {
     res.send('Ok Get Deu Certo');
@@ -8,12 +9,12 @@ app.get('/usuarios', (req, res) => {
    });
 
 app.post('/usuarios', (req, res) => {
-  
-  console.log(req.body);
+  users.push(req.body);
+  console.log(users);
   
   res.send('Ok Post Deu Certo');
   });
-  
+
 app.listen(3000, () => {
     console.log('🚀Rodando server/r76 listening at http://localhost:3000');
   });
