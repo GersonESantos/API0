@@ -14,6 +14,8 @@ app.post('/usuarios', (req, res) => {
   res.send('Ok Post Deu Certo');
   });
 
-app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+
+pp.listen(3000, () => {
+    console.log('🚀Rodando server/r76 listening at http://localhost:3000');
   });
+  
